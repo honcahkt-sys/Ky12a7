@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #2C3E50;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #357ABD;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chào Mừng Đến Với Website Của Tôi</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Xin chào!</h2>
+            <p>Đây là file <code>index.html</code> đã được thiết kế sẵn cấu trúc chuẩn và giao diện cơ bản. Bạn có thể dễ dàng chỉnh sửa nội dung theo ý muốn.</p>
+            <button class="btn" onclick="showMessage()">Nhấn vào đây</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website của bạn. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert('Cảm ơn bạn đã ghé thăm trang web!');
+        }
+    </script>
+
+</body>
+</html>
